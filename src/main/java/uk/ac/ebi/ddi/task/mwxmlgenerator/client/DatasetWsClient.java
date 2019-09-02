@@ -113,17 +113,17 @@ public class DatasetWsClient extends AbstractClient {
      * @return
      */
     public MetaboliteList updateChebiId(MetaboliteList metabolites) {
-        if (metabolites != null && metabolites.metabolites != null && metabolites.metabolites.size() > 0) {
-            for (Map.Entry entry: metabolites.metabolites.entrySet()) {
+        if (metabolites != null && metabolites.getMetabolites() != null && metabolites.getMetabolites().size() > 0) {
+            for (Map.Entry entry: metabolites.getMetabolites().entrySet()) {
                 String key = (String) entry.getKey();
                 Metabolite met = (Metabolite) entry.getValue();
                 if (met != null && met.getPubchem() != null) {
                     ChebiID id = getChebiId(met.getPubchem());
                     if (id != null) {
-                        met.setChebi(id.getChebi_id());
+                        met.setChebi(id.getChebiId());
                     }
                 }
-                metabolites.metabolites.put(key, met);
+                metabolites.getMetabolites().put(key, met);
             }
         }
         return metabolites;

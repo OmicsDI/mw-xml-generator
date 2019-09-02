@@ -15,7 +15,7 @@ public class Analysis {
     private String id;
 
     @JsonProperty("analysis_id")
-    private String analysis_id;
+    private String analysisId;
 
     @JsonProperty("analysis_summary")
     private String summary;
@@ -24,16 +24,16 @@ public class Analysis {
     private String type;
 
     @JsonProperty("instrument_name")
-    private String instrument_name;
+    private String instrumentName;
 
     @JsonProperty("instrument_type")
-    private String instrument_type;
+    private String instrumentType;
 
     @JsonProperty("ms_type")
-    private String ms_type;
+    private String msType;
 
     @JsonProperty("ion_mode")
-    private String ion_mode;
+    private String ionMode;
 
     public String getId() {
         return id;
@@ -43,12 +43,12 @@ public class Analysis {
         this.id = id;
     }
 
-    public String getAnalysis_id() {
-        return analysis_id;
+    public String getAnalysisId() {
+        return analysisId;
     }
 
-    public void setAnalysis_id(String analysis_id) {
-        this.analysis_id = analysis_id;
+    public void setAnalysisId(String analysisId) {
+        this.analysisId = analysisId;
     }
 
     public String getSummary() {
@@ -67,35 +67,35 @@ public class Analysis {
         this.type = type;
     }
 
-    public String getInstrument_name() {
-        return instrument_name;
+    public String getInstrumentName() {
+        return instrumentName;
     }
 
-    public void setInstrument_name(String instrument_name) {
-        this.instrument_name = instrument_name;
+    public void setInstrumentName(String instrumentName) {
+        this.instrumentName = instrumentName;
     }
 
-    public String getInstrument_type() {
-        return instrument_type;
+    public String getInstrumentType() {
+        return instrumentType;
     }
 
-    public void setInstrument_type(String instrument_type) {
-        this.instrument_type = instrument_type;
+    public void setInstrumentType(String instrumentType) {
+        this.instrumentType = instrumentType;
     }
 
-    public String getMs_type() {
-        return ms_type;
+    public String getMsType() {
+        return msType;
     }
 
-    public void setMs_type(String ms_type) {
-        this.ms_type = ms_type;
+    public void setMsType(String msType) {
+        this.msType = msType;
     }
 
-    public String getIon_mode() {
-        return ion_mode;
+    public String getIonMode() {
+        return ionMode;
     }
 
-    public void setIon_mode(String ion_mode) {
-        this.ion_mode = ion_mode;
+    public void setIonMode(String ionMode) {
+        this.ionMode = ionMode;
     }
 }

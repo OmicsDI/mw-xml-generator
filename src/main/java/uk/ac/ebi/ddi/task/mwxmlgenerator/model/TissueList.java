@@ -14,7 +14,7 @@ import java.util.Set;
  */
 public class TissueList {
 
-    public Map<String, Tissue> tissues = new HashMap<>();
+    private Map<String, Tissue> tissues = new HashMap<>();
 
     @JsonAnyGetter
     public Map<String, Tissue> any() {
@@ -40,5 +40,13 @@ public class TissueList {
             }
         }
         return tissuesResult;
+    }
+
+    public Map<String, Tissue> getTissues() {
+        return tissues;
+    }
+
+    public void setTissues(Map<String, Tissue> tissues) {
+        this.tissues = tissues;
     }
 }

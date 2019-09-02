@@ -15,7 +15,7 @@ import java.util.Map;
 
 public class FactorList {
 
-    public Map<String, Factor> factors = new HashMap<>();
+    private Map<String, Factor> factors = new HashMap<>();
 
     @JsonAnyGetter
     public Map<String, Factor> any() {
@@ -31,5 +31,11 @@ public class FactorList {
         return !factors.isEmpty();
     }
 
+    public Map<String, Factor> getFactors() {
+        return factors;
+    }
 
+    public void setFactors(Map<String, Factor> factors) {
+        this.factors = factors;
+    }
 }

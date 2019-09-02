@@ -16,8 +16,7 @@ import java.util.Map;
 
 public class MetaboliteList {
 
-
-    public Map<String, Metabolite> metabolites = new HashMap<>();
+    private Map<String, Metabolite> metabolites = new HashMap<>();
 
     @JsonAnyGetter
     public Map<String, Metabolite> any() {
@@ -31,6 +30,14 @@ public class MetaboliteList {
 
     public boolean hasUnknowProperties() {
         return !metabolites.isEmpty();
+    }
+
+    public Map<String, Metabolite> getMetabolites() {
+        return metabolites;
+    }
+
+    public void setMetabolites(Map<String, Metabolite> metabolites) {
+        this.metabolites = metabolites;
     }
 
     @Override
