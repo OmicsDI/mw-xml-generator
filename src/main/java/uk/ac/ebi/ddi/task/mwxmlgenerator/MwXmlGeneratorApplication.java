@@ -48,6 +48,7 @@ public class MwXmlGeneratorApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
+        fileSystem.cleanDirectory(taskProperties.getOutputDir());
         DatasetWsClient datasetWsClient = new DatasetWsClient(config);
         DatasetList datasets = datasetWsClient.getAllDatasets();
         TissueList tissueList = datasetWsClient.getTissues();
