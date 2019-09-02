@@ -16,7 +16,7 @@ public class ChebiID {
     private String pubchemId;
 
     @JsonProperty("chebi_id")
-    private String chebi_id;
+    private String chebiId;
 
     public String getPubchemId() {
         return pubchemId;
@@ -26,11 +26,11 @@ public class ChebiID {
         this.pubchemId = pubchemId;
     }
 
-    public String getChebi_id() {
-        return chebi_id;
+    public String getChebiId() {
+        return chebiId;
     }
 
-    public void setChebi_id(String chebi_id) {
-        this.chebi_id = chebi_id;
+    public void setChebiId(String chebiId) {
+        this.chebiId = chebiId;
     }
 }

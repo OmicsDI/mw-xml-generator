@@ -13,7 +13,7 @@ import java.util.Map;
 
 public class AnalysisList {
 
-    public Map<String, Analysis> analysisMap = new HashMap<>();
+    private Map<String, Analysis> analysisMap = new HashMap<>();
 
     @JsonAnyGetter
     public Map<String, Analysis> any() {
@@ -27,5 +27,13 @@ public class AnalysisList {
 
     public boolean hasUnknowProperties() {
         return !analysisMap.isEmpty();
+    }
+
+    public Map<String, Analysis> getAnalysisMap() {
+        return analysisMap;
+    }
+
+    public void setAnalysisMap(Map<String, Analysis> analysisMap) {
+        this.analysisMap = analysisMap;
     }
 }

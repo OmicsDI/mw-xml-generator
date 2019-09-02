@@ -14,7 +14,7 @@ public class Disease {
     private String studyId;
 
     @JsonProperty("Disease")
-    private String Disease;
+    private String disease;
 
     public String getStudyId() {
         return studyId;
@@ -25,18 +25,18 @@ public class Disease {
     }
 
     public String getDisease() {
-        return Disease;
+        return disease;
     }
 
     public void setDisease(String disease) {
-        Disease = disease;
+        this.disease = disease;
     }
 
     @Override
     public String toString() {
         return "Disease{" +
                 "studyId='" + studyId + '\'' +
-                ", Disease='" + Disease + '\'' +
+                ", Disease='" + disease + '\'' +
                 '}';
     }
 }

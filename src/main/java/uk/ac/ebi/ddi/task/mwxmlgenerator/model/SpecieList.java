@@ -14,7 +14,7 @@ import java.util.Set;
  */
 public class SpecieList {
 
-    public Map<String, Specie> species = new HashMap<>();
+    private Map<String, Specie> species = new HashMap<>();
 
     @JsonAnyGetter
     public Map<String, Specie> any() {
@@ -28,6 +28,14 @@ public class SpecieList {
 
     public boolean hasUnknowProperties() {
         return !species.isEmpty();
+    }
+
+    public Map<String, Specie> getSpecies() {
+        return species;
+    }
+
+    public void setSpecies(Map<String, Specie> species) {
+        this.species = species;
     }
 
     public Set<Specie> getSpeciesByDataset(String id) {
